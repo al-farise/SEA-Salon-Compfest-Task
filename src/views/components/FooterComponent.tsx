@@ -27,7 +27,7 @@ function FooterComponent() {
             </button>
           </div>
         </div>
-        <div className="xl:container xl:mx-auto pt-28 sm:pt-40 px-4 md:pt-48 md:px-8">
+        <div className="xl:container xl:mx-auto pt-32 sm:pt-40 px-4 md:pt-48 md:px-8">
           <div className="flex flex-wrap justify-between gap-y-4">
             <div className="flex flex-col justify-between">
               <h1 className="text-3xl font-bold text-brand">SEA Salon</h1>
