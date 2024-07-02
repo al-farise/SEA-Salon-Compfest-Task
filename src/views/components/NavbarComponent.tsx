@@ -4,13 +4,13 @@ function NavbarComponent() {
   return (
     <>
       {/* Navigation Menu */}
-      <nav className="w-full">
+      <nav>
         <div className="xl:container xl:mx-auto flex justify-between items-center py-4 px-2 xl:px-0">
           <h1 className="text-3xl font-bold text-brand">SEA Salon</h1>
-          <button className="md:hidden">
+          <button className="lg:hidden">
             <MenuIcon className="text-brand" fontSize="large" />
           </button>
-          <ul className="md:flex justify-between h-fit hidden">
+          <ul className="lg:flex justify-between h-fit hidden">
             <li className="px-8 h-fit">
               <a href="#" className="text-lg block my-auto">
                 Appointment
@@ -32,7 +32,7 @@ function NavbarComponent() {
               </a>
             </li>
           </ul>
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <button className="text-brand px-8 py-2 font-medium">
               Sign Up
             </button>
