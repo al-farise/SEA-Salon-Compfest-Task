@@ -86,9 +86,9 @@ function LandingPage() {
         </div>
 
         <div className="mt-12 flex flex-wrap justify-between gap-y-8">
-          {services.map((service) => {
+          {services.map((service, index) => {
             return (
-              <div className="w-1/3 xl:w-[480px] rounded-2xl overflow-hidden relative">
+              <div className="w-1/3 xl:w-[480px] rounded-2xl overflow-hidden relative" key={index}>
                 <div className="absolute top-0 left-0 bg-gray-400 w-full h-full opacity-65"></div>
                 <h5 className="absolute top-1/2 -translate-y-1/2 w-full text-center text-brand text-4xl font-bold">
                   {service.name}
@@ -139,9 +139,9 @@ function LandingPage() {
         </div>
 
         <div className="mt-12 flex flex-wrap justify-around gap-y-8">
-          {experts.map((expert) => {
+          {experts.map((expert, index) => {
             return (
-              <div>
+              <div key={index}>
                 <div className="w-60 h-60 rounded-full overflow-hidden border-4 border-solid border-brand">
                   <img
                     src={expert.image}
